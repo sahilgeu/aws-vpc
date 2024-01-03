@@ -1,0 +1,27 @@
+Route 53 - since dns works on port no 53
+Fully managed aws service which help us to register a domain, domain transfer route 53, use route 53 to divert traffic and for health check up also
+route 53 send automated request to check if the resource is healthy or not 
+route 53 supports geogrpahic and generic domain
+routing policies in route 53-
+  a- simple or default routing- mpas website to ip address
+  b- faiover routing policy we create two resource- active and passive and two records primary and secodary nd applicable only for public hosted zone
+  c- geoloction - based on the location of user - we can preovide content in local language and also restrict 
+      overlap geogaphic regions - priority goes to smaller one 
+d- latecny based - which server takes less time
+e-weighted routing policy -weights(1-255) are place on a particular server for same application so that we can monitor that no server recieves more laod
+f- geo proximity - when we want to shift traffic from resource in one location to resource in another location'
+g-Multivalue answer routing policy - we can place 8 records at once
+hosted zone in route 53 - it is cotainer having information how route 53 will route traffic for ur sub domain and domain
+we can create pubice itnternet hosted zone and private internal hosted zone 
+for every publci interal hosted zone route 53 will create 4 nameserve(delegation set) and state of authority
+we can create two hosted zone with same name but nameservers name shall be different
+nameservrs name will be same to hosted zone
+authoriative name server for hosted zone
+Dns records- map human readable domain name to ip address and also provide various info reated to domain
+dns records suppported by aws-
+  a- A type- map domain name to ipv4(32 bit)
+  b AAAA type map domain name to ipv6(128 bit)
+  c Cname -Canonical name record typ- map alias to domain nama sub domain point to same location as maindomain used for sub domain
+ 4- Ns record- specify authoritative dns server 
+5-
+   
